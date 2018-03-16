@@ -1,9 +1,9 @@
 <script src="config.js"></script>
 <script>
-if (list.search(location.hash)===-1) {
+if (list.indexOf(location.hash)===-1) {
 location.assign("error");
 } else {
-location.assign(urls[list.search(location.hash)]);
+location.assign(urls[list.indexOf(location.hash)]);
 } 
 </script>
 
